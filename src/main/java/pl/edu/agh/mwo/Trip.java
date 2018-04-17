@@ -4,13 +4,12 @@ import java.util.Collection;
 
 public class Trip {
 	
-	//public String name;
-	//public String description;
+	public String name;
+	public String description;
 	
 	Collection<Photo> photos = new ArrayList<Photo>();
 	
 	public Collection<Photo> getPhotos() {
-		// TODO Auto-generated method stub
 		return photos;
 	}
 

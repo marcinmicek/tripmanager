@@ -7,7 +7,7 @@ import org.junit.Test;
 public class TripTest {
 
 	@Test
-	public void addPhoto() {
+	public void testAddPhoto() {
 		Trip trip = new Trip();
 		Photo photo = new Photo();
 		assertEquals(0, trip.getPhotos().size());
