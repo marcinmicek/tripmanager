@@ -22,8 +22,9 @@ public class TripManager {
 	
 	public void findTrip(String keyword) {
 		for (Trip trip : trips) {
-			if (trip.name.startsWith(keyword)) 
+			if (trip.name.startsWith(keyword)) {
 				foundTrips.add(trip);
+			}
 		}
 	}
 	
