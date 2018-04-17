@@ -24,4 +24,15 @@ public class TripManagerTest {
 		tripManager.removeTrip(trip);
 		assertEquals(0, tripManager.getTrips().size());
 	}
+	
+	@Test
+	public void testfindTrip() {
+		TripManager tripManager = new TripManager();
+		Trip trip = new Trip();
+		tripManager.addTrip(trip);
+		String keyword = "ala";
+		trip.name = keyword;
+		tripManager.findTrip(keyword);
+		assertEquals(1, tripManager.foundTrips.size());
+	}
 }

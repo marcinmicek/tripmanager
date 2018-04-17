@@ -6,6 +6,7 @@ import java.util.Collection;
 public class TripManager {
 
 	Collection<Trip> trips = new ArrayList<Trip>();
+	Collection<Trip> foundTrips = new ArrayList<Trip>();
 	
 	public Collection<Trip> getTrips() {	
 		return trips;
@@ -20,7 +21,10 @@ public class TripManager {
 	}
 	
 	public void findTrip(String keyword) {
-		
+		for (Trip t : trips) {
+			if (t.name.startsWith(keyword)) 
+				foundTrips.add(t);
+		}
 	}
 	
 }
